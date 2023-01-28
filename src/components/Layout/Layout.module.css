@@ -1,0 +1,9 @@
+.main {
+  background-color: #f7f7f7;
+  padding: 8rem 6rem;
+  flex: 1;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  /* overflow-y: auto; */
+}
