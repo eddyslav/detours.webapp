@@ -54,16 +54,21 @@ export const register = (request) => async (dispatch) => {
   } catch (err) {
     if (err.response?.status === 400) {
       showMessage(
-        err.response.data.messages.map((message) => ({
+        err.response.data.messages.map((x) => ({
           type: 'warning',
-          message,
+          title: 'Failed to register',
+          message: x,
         }))
       );
 
       return false;
     }
 
-    showMessage({ type: 'danger', message: err.message });
+    showMessage({
+      type: 'danger',
+      title: 'Something went wrong',
+      message: err.message,
+    });
 
     return false;
   }

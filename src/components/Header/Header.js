@@ -44,7 +44,7 @@ const Header = () => {
               </li>
 
               <li>
-                <Link className={classes['main-nav-link']}>
+                <Link className={classes['main-nav-link']} to='#'>
                   <img
                     className={classes['main-nav-link__user-img']}
                     src={getUsersImg(auth.me.photo)}
@@ -64,7 +64,7 @@ const Header = () => {
               <li>
                 <Link
                   className={`${classes['main-nav-link']} ${classes['nav-cta']}`}
-                  to='/register'
+                  to='/sign-up'
                 >
                   Register
                 </Link>
