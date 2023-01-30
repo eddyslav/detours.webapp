@@ -10,7 +10,7 @@ const Register = ({ submitting }) => {
     <div className={classes['signup-form']}>
       <SecondaryHeading>Create your account!</SecondaryHeading>
 
-      <Form method='post' action='/register'>
+      <Form method='post' action='/sign-up'>
         <Form.Group>
           <Form.Label htmlFor='name'>Your name</Form.Label>
           <Form.Input

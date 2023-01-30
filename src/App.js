@@ -17,7 +17,7 @@ import MyBookingsPage from "./pages/MyBookingsPage";
 import BookingPage from './pages/BookingPage';
 
 import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage';
+import SignUpPage from './pages/SignUpPage';
 
 import { loader as logoutLoader } from './pages/LogoutPage';
 
@@ -38,9 +38,9 @@ const router = createBrowserRouter(
 	  <Route path='/login' element={<LoginPage/>} action={LoginPage.action}/>
 
 	  <Route
-		path='/register'
-		element={<RegisterPage/>}
-		action={RegisterPage.action}
+		path='/sign-up'
+		element={<SignUpPage/>}
+		action={SignUpPage.action}
 	  />
 
 	  <Route
